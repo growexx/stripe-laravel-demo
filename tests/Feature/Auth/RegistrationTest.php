@@ -1,14 +1,15 @@
 <?php
 
-namespace Tests\Feature\Auth;
+namespace Tests\Feature;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use App\Models\User;
 
 class RegistrationTest extends TestCase
 {
-    use RefreshDatabase;
+    // use RefreshDatabase;
 
     public function test_registration_screen_can_be_rendered()
     {
@@ -20,13 +21,15 @@ class RegistrationTest extends TestCase
     public function test_new_users_can_register()
     {
         $response = $this->post('/register', [
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => 'password',
-            'password_confirmation' => 'password',
+            'name' => 'Krisha',
+            'email' => 'k@example.com',
+            'password' => 'Aditi@1230',
+            'password_confirmation' => 'Aditi@1230',
         ]);
 
         $this->assertAuthenticated();
         $response->assertRedirect(RouteServiceProvider::HOME);
+         User::findOrFail($response->id)->delete();
+
     }
 }

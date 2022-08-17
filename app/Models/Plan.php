@@ -15,9 +15,4 @@ class Plan extends Model
         'cost',
         'description'
     ];
-
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
 }

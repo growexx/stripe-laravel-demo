@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Auth;
+namespace Tests\Feature;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class PasswordConfirmationTest extends TestCase
 {
-    use RefreshDatabase;
+    // use RefreshDatabase;
 
     public function test_confirm_password_screen_can_be_rendered()
     {
@@ -17,6 +17,8 @@ class PasswordConfirmationTest extends TestCase
         $response = $this->actingAs($user)->get('/confirm-password');
 
         $response->assertStatus(200);
+        $user = User::findOrFail($user->id)->delete();
+
     }
 
     public function test_password_can_be_confirmed()
@@ -29,6 +31,8 @@ class PasswordConfirmationTest extends TestCase
 
         $response->assertRedirect();
         $response->assertSessionHasNoErrors();
+        $user = User::findOrFail($user->id)->delete();
+
     }
 
     public function test_password_is_not_confirmed_with_invalid_password()
@@ -40,5 +44,7 @@ class PasswordConfirmationTest extends TestCase
         ]);
 
         $response->assertSessionHasErrors();
+        $user = User::findOrFail($user->id)->delete();
+
     }
 }

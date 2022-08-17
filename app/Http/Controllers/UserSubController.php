@@ -49,6 +49,7 @@ class UserSubController extends Controller
         $product = $this->stripe->products->retrieve($productID, []);
         $customerID = $subscriptionItem->customer;
         $Customer = $this->stripe->customers->retrieve($customerID, []);
+        $data[] = [];
         if (Auth::user()->stripe_id == $customerID) {
             $data['subscriptions'] = [
                 'id' => $subscriptionItem->id,

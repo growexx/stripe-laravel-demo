@@ -49,7 +49,6 @@ class PaymentController extends Controller
     {
 
         $invoice = $this->stripe->invoices->retrieve($id, []);
-        // dd($invoice);
         $product = [];
         if ($invoice->lines->data[0]->subscription) {
             $subscriptionId = $invoice->lines->data[0]->subscription_item;

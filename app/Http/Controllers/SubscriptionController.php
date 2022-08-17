@@ -15,7 +15,7 @@ class SubscriptionController extends Controller
         $this->stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
     }
 
-    public function store(Request $request, Plan $plan)
+    public function store(Request $request)
     {
         $plan = Plan::findOrFail($request->get('plan'));
 

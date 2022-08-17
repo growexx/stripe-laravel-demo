@@ -16,6 +16,7 @@ class InvoiceController extends Controller
 
     public function index()
     {
+        // dd("hello");
         if (Auth::user()->role == 'admin') {
             $invoices = $this->stripe->invoices->all(['limit' => 10]);
             $data['invoices'] = [];
@@ -48,7 +49,6 @@ class InvoiceController extends Controller
     {
         if (Auth::user()->role == 'admin') {
             $invoice = $this->stripe->invoices->retrieve($id, []);
-            // dd($invoice);
             $product = [];
             if ($invoice->lines->data[0]->subscription) {
                 $subscriptionId = $invoice->lines->data[0]->subscription_item;

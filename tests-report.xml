@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="33" assertions="99" errors="1" warnings="0" failures="1" skipped="0" time="56.470881">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001593">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001593">
+        <testcase name="test_that_true_is_true" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Unit/ExampleTest.php" line="14" assertions="1" time="0.001593"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="32" assertions="98" errors="1" warnings="0" failures="1" skipped="0" time="56.469288">
+      <testsuite name="Tests\Feature\AdminSubTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/AdminSubTest.php" tests="1" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="12.531803">
+        <testcase name="test_indexPage" class="Tests\Feature\AdminSubTest" classname="Tests.Feature.AdminSubTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/AdminSubTest.php" line="13" assertions="8" time="12.531803"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" tests="5" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.332352">
+        <testcase name="test_login_screen_can_be_rendered" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" line="17" assertions="1" time="0.030916"/>
+        <testcase name="test_users_can_authenticate_using_the_login_screen" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" line="26" assertions="2" time="0.109875"/>
+        <testcase name="test_users_can_not_authenticate_with_invalid_password" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" line="43" assertions="1" time="0.090193"/>
+        <testcase name="testLogoutAnAuthenticatedUser" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" line="85" assertions="2" time="0.034364"/>
+        <testcase name="test_User_Cannot_MakeMoreThanFiveAttemptsInOneMinute" class="Tests\Feature\AuthenticationTest" classname="Tests.Feature.AuthenticationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/AuthenticationTest.php" line="98" assertions="8" time="0.067005"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\PasswordConfirmationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordConfirmationTest.php" tests="3" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.198175">
+        <testcase name="test_confirm_password_screen_can_be_rendered" class="Tests\Feature\PasswordConfirmationTest" classname="Tests.Feature.PasswordConfirmationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordConfirmationTest.php" line="13" assertions="1" time="0.033919"/>
+        <testcase name="test_password_can_be_confirmed" class="Tests\Feature\PasswordConfirmationTest" classname="Tests.Feature.PasswordConfirmationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordConfirmationTest.php" line="24" assertions="2" time="0.082234"/>
+        <testcase name="test_password_is_not_confirmed_with_invalid_password" class="Tests\Feature\PasswordConfirmationTest" classname="Tests.Feature.PasswordConfirmationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordConfirmationTest.php" line="38" assertions="1" time="0.082022"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" tests="10" assertions="20" errors="1" warnings="0" failures="0" skipped="0" time="0.378355">
+        <testcase name="test_reset_password_link_screen_can_be_rendered" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="19" assertions="1" time="0.027318"/>
+        <testcase name="test_reset_password_link_can_be_requested" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="26" assertions="1" time="0.038100"/>
+        <testcase name="test_reset_password_screen_can_be_rendered" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="38" assertions="2" time="0.043455"/>
+        <testcase name="test_password_can_be_reset_with_valid_token" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="56" assertions="2" time="0.046572"/>
+        <testcase name="test_UserReceivesAnEmailWithAPasswordResetLink" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="89" assertions="0" time="0.025049">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\PasswordResetTest::test_UserReceivesAnEmailWithAPasswordResetLink
+Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'john12@example.com' for key 'users_email_unique' (SQL: insert into `users` (`name`, `email`, `email_verified_at`, `password`, `remember_token`, `updated_at`, `created_at`) values (Angelica Parisian MD, john12@example.com, 2022-08-17 14:52:06, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, tGp0ZFNQk6, 2022-08-17 14:52:06, 2022-08-17 14:52:06))
+
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php:759
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php:719
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php:545
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php:497
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php:32
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:3246
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:1834
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1216
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1181
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1022
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php:319
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php:264
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php:322
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php:268
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php:262
+/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php:93
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/phpunit/phpunit/phpunit:98</error>
+        </testcase>
+        <testcase name="testEmailIsRequired" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="106" assertions="4" time="0.026750"/>
+        <testcase name="testEmailIsAValidEmail" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="114" assertions="4" time="0.027212"/>
+        <testcase name="test_DoesNotSendPasswordResetEmail" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="125" assertions="3" time="0.032024"/>
+        <testcase name="test_ChangesAUsersPassword" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="132" assertions="1" time="0.079197"/>
+        <testcase name="test_NewPassword" class="Tests\Feature\PasswordResetTest" classname="Tests.Feature.PasswordResetTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/PasswordResetTest.php" line="141" assertions="2" time="0.032679"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\RegistrationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/RegistrationTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="1" skipped="0" time="0.076265">
+        <testcase name="test_registration_screen_can_be_rendered" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/RegistrationTest.php" line="14" assertions="1" time="0.034969"/>
+        <testcase name="test_new_users_can_register" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/RegistrationTest.php" line="21" assertions="1" time="0.041296">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RegistrationTest::test_new_users_can_register
+The user is not authenticated
+Failed asserting that false is true.
+
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithAuthentication.php:49
+/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/Auth/RegistrationTest.php:30
+/var/www/html/GIthub all projects/stripe-laravel-demo/vendor/phpunit/phpunit/phpunit:98</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.028254">
+        <testcase name="test_the_application_returns_a_successful_response" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/ExampleTest.php" line="15" assertions="1" time="0.028254"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\InvoicePaymentTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/InvoicePaymentTest.php" tests="1" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="17.433791">
+        <testcase name="test_indexPage" class="Tests\Feature\InvoicePaymentTest" classname="Tests.Feature.InvoicePaymentTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/InvoicePaymentTest.php" line="13" assertions="10" time="17.433791"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\PlanTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/PlanTest.php" tests="3" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="2.915167">
+        <testcase name="test_indexPage" class="Tests\Feature\PlanTest" classname="Tests.Feature.PlanTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/PlanTest.php" line="11" assertions="12" time="2.738431"/>
+        <testcase name="test_updatePlan" class="Tests\Feature\PlanTest" classname="Tests.Feature.PlanTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/PlanTest.php" line="59" assertions="2" time="0.086941"/>
+        <testcase name="test_editPlan" class="Tests\Feature\PlanTest" classname="Tests.Feature.PlanTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/PlanTest.php" line="75" assertions="2" time="0.089794"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\SubscriptionTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/SubscriptionTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="10.959919">
+        <testcase name="test_indexPage" class="Tests\Feature\SubscriptionTest" classname="Tests.Feature.SubscriptionTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/SubscriptionTest.php" line="9" assertions="3" time="10.959919"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\UserSubTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserSubTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="11.146878">
+        <testcase name="test_indexPage" class="Tests\Feature\UserSubTest" classname="Tests.Feature.UserSubTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserSubTest.php" line="14" assertions="3" time="11.146878"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\UserTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserTest.php" tests="4" assertions="17" errors="0" warnings="0" failures="0" skipped="0" time="0.468331">
+        <testcase name="test_indexPage" class="Tests\Feature\UserTest" classname="Tests.Feature.UserTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserTest.php" line="10" assertions="11" time="0.192720"/>
+        <testcase name="test_updateUser" class="Tests\Feature\UserTest" classname="Tests.Feature.UserTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserTest.php" line="48" assertions="2" time="0.093006"/>
+        <testcase name="test_editUser" class="Tests\Feature\UserTest" classname="Tests.Feature.UserTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserTest.php" line="67" assertions="2" time="0.094991"/>
+        <testcase name="test_deleteUser" class="Tests\Feature\UserTest" classname="Tests.Feature.UserTest" file="/var/www/html/GIthub all projects/stripe-laravel-demo/tests/Feature/UserTest.php" line="84" assertions="2" time="0.087614"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

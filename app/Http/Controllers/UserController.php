@@ -9,11 +9,13 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    const ROUTEINDEX = 'user.index';
+
     public function index()
     {
-        if (Auth::user()->role == 'admin') {
+        if (strtolower(Auth::user()->role) == 'admin') {
             $users = User::all();
-            return view('user.index', compact('users'));
+            return view($this::ROUTEINDEX, compact('users'));
         } else {
             return view('404');
         }
@@ -21,7 +23,7 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-        if (Auth::user()->role == 'admin') {
+        if (strtolower(Auth::user()->role) == 'admin') {
             return view('user.show', compact('user'));
         } else {
             return view('404');
@@ -48,7 +50,7 @@ class UserController extends Controller
 
             $user->update($request->all());
 
-            return redirect()->route('user.index')
+            return redirect()->route($this::ROUTEINDEX)
                 ->with('success', 'User updated successfully.');
         } else {
             return view('404');
@@ -60,7 +62,7 @@ class UserController extends Controller
         if (Auth::user()->role == 'admin') {
             $user->delete();
 
-            return redirect()->route('user.index')
+            return redirect()->route($this::ROUTEINDEX)
                 ->with('success', 'User deleted successfully.');
         } else {
             return view('404');

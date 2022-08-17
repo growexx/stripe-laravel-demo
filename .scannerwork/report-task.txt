@@ -1,0 +1,6 @@
+projectKey=stripe-laravel-demo
+serverUrl=https://quality.growexx.com
+serverVersion=8.9.6.50800
+dashboardUrl=https://quality.growexx.com/dashboard?id=stripe-laravel-demo
+ceTaskId=AYKsS6UjpC_NmuKnXXBT
+ceTaskUrl=https://quality.growexx.com/api/ce/task?id=AYKsS6UjpC_NmuKnXXBT
